@@ -1,0 +1,13 @@
+git init
+git config user.name [name]
+git config user.email [email]
+
+git status
+
+git add .
+git commit -m "commit message"
+
+heroku login
+heroku git:remote -a [appname]
+
+git push heroku master -f

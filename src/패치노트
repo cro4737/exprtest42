@@ -1,0 +1,28 @@
+<br>
+<version>V0</version>
+<dt>    21.03.17.</dt>
+<li>git-heroku 이용하여 deploy 시도하였으나 실패 (18일 01시 일단 포기)</li>
+<li>port를 환경변수로 변경, npm start지정하여도 app clash</li>
+<li id="add">// 원인 : [dir = C://폴더명]으로 변수지정하여 경로를 강제지정한 상태였음</li>
+<dt>    21.03.18.</dt>
+<li>git-heroku 이용하여 deploy 재시도하였으나 다시 실패 (19일 01시 다시 포기)</li>
+<li>heroku run printenv로 port 파악하여 포트를 강제지정해봤지만 실패<br>
+<li id="add">// 원인 : 변수명으로 지정한 것이 문제라고 생각하여 모든 소스에 경로를 강제지정 -----------------> dir를 __dirname으로 받지 않으면 경로를 찾을 수 없으므로 app clash</li>
+<dt>    21.03.19.</dt>
+<li>__dirname으로 경로 지정, process.env.port 지정하였으나 app clash</li>
+<li id="add">--> process.env.PORT로 변경하여 성공</li>
+<br>
+<version>V1</version>
+<dt>    21.03.19.</dt>
+<li>22시 25분  -------------  배포 성공</li>
+<br>
+<version>V2</version>
+<dt>    21.03.20.</dt>
+<li> sanitize-html 적용 --> XSS차단 </li>
+<br>
+<version>V3</version>
+<dt>    21.03.22.</dt>
+<li> login-session을 이용한 개인화 적용 </li>
+<dt>    21.03.23.</dt>
+<li> 치명적인 오류 발견 : 새로운 글 작성 및 글 수정시 제목을 입력하지 않는 경우 app clash --------> 조치완료 </li>
+

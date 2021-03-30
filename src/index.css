@@ -1,0 +1,165 @@
+/*body{
+    left:10vw
+}*/
+
+/* 화면크기 964**1265로 고정 */
+body{
+    font-family: 'NanumSquareRound',sans-serif;
+}
+/* idx title */
+#idx_tit{
+    display: block;
+    width: 900px;
+    margin-top : 10px;
+    margin-left: 32px;
+}
+#idx_tit h1 {
+   /* border:solid 1px red;*/
+  /*  width: 650px;   
+    height: 200px;*/
+    margin: 0;
+    padding-left: 0px;
+    text-align: center;
+    font-size : 75px;
+    color : red;
+}
+profile{
+    position: absolute;
+    right: 6vw;
+}
+
+profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+/* idx grid view */
+#ul_grid {
+    position: absolute;
+    top:420px;
+    left:32px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    width: 900px;
+    margin-top : 0;
+   /* margin-left: 32px;*/
+    padding: 0 0 0 0;
+    text-align: center;    
+}
+li {
+    /*border:solid 1px red;*/
+    list-style-type: none;
+    height: 280px;
+    padding: 10px 10px 10px 10px;
+}
+li a{
+    text-decoration: none;
+    color:rgba(130,130,130,1)
+}
+
+ul li img {
+    height: 280px;
+    width : 280px;
+    border-radius: 30%;
+    font-size: 35px;
+}
+#ul_grid #ctt {
+    display:none;
+}
+
+/* idx list view */
+#ul_list {
+    position: absolute;
+    top:420px;
+    left:32px;
+    width: 900px;
+    margin-top : 0;
+   /* margin-left: 32px;*/
+    padding: 0 0 0 0;
+    text-align: justify;
+}
+#ul_list li {
+    display: grid;
+    grid-template-columns: 300px 600px;
+    text-align: justify;
+}
+#ul_list #ctt {
+    color:rgb(0, 0, 0);
+    padding-left: 20px;
+    font-size: 50px;
+    word-break: break-all;
+}
+
+/* ctl */
+ctl{
+    position:absolute;
+    display: inline;
+    top: 320px;
+    right: 6vw;
+}
+#create{display:none;}
+#create + label{cursor:pointer;}
+#create_icon {height:80px;}
+
+#grid_view_icon, #list_view_icon {
+    height:80px;
+    cursor:pointer;
+}
+
+/**/
+auth{
+    display: inline;
+    padding: 0 10px 0 10px;
+    font-size:50px;
+    color:rgba(96,96,96,1);
+}
+#logout{
+    position: absolute;
+    top:0;
+    right : 6vw;
+    height:50px;
+    width:120px;
+    border:0;
+    border-radius: 5%;
+    background-color:red;	
+    font-size:22px;
+    font-family: 'NanumSquareRound',sans-serif;
+    color:rgb(255,255,255);
+    
+}
+
+#rtc{
+    position: absolute;
+    top:50px;
+    right : 6vw;
+    height:50px;
+    width:120px;
+    border-radius: 5%;
+    font-size:22px;
+    font-family: 'NanumSquareRound',sans-serif;
+}
+/**/
+
+
+/* 210320 출처표기 */
+footer{
+    position: fixed;
+    bottom: 10px;
+    left: 32px;
+    color:rgba(130,130,130,1); 
+    font-size: 20px;
+    font-family: 'NanumSquareRound',sans-serif;
+}
+footer a{
+    color:rgba(130,130,130,1);
+    font-family: 'NanumSquareRound',sans-serif;
+}
+footer pn{
+    display: inline;
+    position: fixed;
+    right:50px;
+    text-decoration: none;
+    color: red;
+    font-family: 'NanumSquareRound',sans-serif;
+}

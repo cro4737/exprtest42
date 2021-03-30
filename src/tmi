@@ -1,0 +1,16 @@
+<li>여기는 CSS 신경쓰지 않았음</li>
+<li>42는 내가 좋아하는 숫자</li>
+
+<li>이 페이지의 모든 CSS는 전체구조->배치->폰트 순으로 배치하려 노력하였는데 어디선가는 틀어졌을지도</li>
+
+<li>사진있는 목록(해당 목록을 제목으로 글을 써야 사진이 붙음)</li>
+// 해당 목록은 제목추천기능 추가로 삭제 //
+
+<li>IOS에서는 img태그의 alt가 적용되지 않는 듯 하다</li>
+
+<li>DB : X</li>
+<li>cookie를 이용한 login기능부여는 보안위험</li>
+<li>session을 이용한 login기능 부여 적용완료</li>
+<li>XSS 차단 완료</li>
+<li>SQL injection --> connected_DB X</li>
+<li>비밀번호 암호화 --> 저장 X</li>

@@ -1,0 +1,180 @@
+/*idx
+grid{
+     display: grid;
+     grid-template-rows: 125% 175%;
+    }
+
+list{
+    border: red solid 1px;
+    width: 100%;
+    padding : 3px 3px 3px 3px;
+}*/
+
+/* 화면크기 964**1265로 고정 */
+
+/* read */
+body{
+    font-family: 'NanumSquareRound',sans-serif;
+}
+tit h1 {
+    width: 900px;   
+    height: 200px;
+    border: red solid 1px;
+    text-align: center;
+    font-size: 130px;
+    margin: 90px 0 0 32px;
+}
+
+ctt {
+    border: red solid 1px;
+    display: block;
+    width: 870px;
+    height: 900px;
+    margin-left: 32px;
+    padding : 0px 0px 30px 30px;
+    word-break: break-all;
+    font-size: 70px;
+}
+ctt p {margin: 10px;}
+ctt input,textarea{
+    display: block;
+    width: 600px;
+    height: 100px;
+    word-break: break-all;
+    font-size: 50px;
+    font-family: 'NanumSquareRound',sans-serif;
+}
+ctt textarea{height: 200px;}
+/* #submt{
+    display: inline;
+    width:500px;
+}
+#img_icon{
+    position: absolute;
+    width: 80px;
+    left: 600px;;
+} */
+/* not used */
+list ul li{list-style-type : "🔒 ";}
+
+footer{
+    color:rgba(130,130,130,1);
+    font-family: 'NanumSquareRound',sans-serif;
+}
+footer a{
+    color:rgba(130,130,130,1);
+    font-family: 'NanumSquareRound',sans-serif;
+}
+
+
+
+/* 210315 added__ ctl */
+#home{display:none;}
+#home + label{cursor:pointer;}
+#home_icon {height:80px;}
+
+#create{display:none;}
+#create + label{cursor:pointer;}
+#create_icon {height:80px;}
+
+#del{display:none;}
+#del + label{cursor:pointer;}
+#delete_icon {height:80px;}
+
+#del_form {display:inline;}
+
+#update{display:none;}
+#update + label{cursor:pointer;}
+#update_icon {height:80px;}
+
+ctl{
+    position:absolute;
+    display: inline;
+    left:calc(900px - 120px);
+}
+
+/*add 210319_ menu_sidebar*/
+#menuicon { display : none;}
+	#menuicon + label {
+        display : inline-block;
+        left: -720px;
+		width : 30px;
+		height : 30px;
+		position : relative;
+        cursor : pointer;
+        z-index: 1;
+	}
+	#menuicon + label span {
+        display : block;
+		position : absolute;
+		width : 100%;
+		height : 4px;
+		border-radius : 30px;
+		background : red;		
+	}
+	#menuicon + label span:nth-child(1) {
+        top : 0;
+	}
+	#menuicon + label span:nth-child(2) {
+		top : 50%;
+        transform : translateY(-50%);
+	}
+	#menuicon + label span:nth-child(3) {
+        bottom: 0;
+    }
+
+	#menuicon:checked + label span:nth-child(1) {
+		top : 50%;
+        transform : translateY(-50%) rotate(45deg);
+        background-color: azure;
+	}
+	#menuicon:checked + label span:nth-child(2) {
+        opacity : 0;
+	}
+	#menuicon:checked + label span:nth-child(3) {
+		bottom : 37%;
+        transform : translateY(-50%) rotate(-45deg);
+        background-color: azure;
+	}
+
+	.sidebar {
+		width : 150px;
+		height : 100%;
+		background : rgba(130,230,255,1);
+		position : fixed;
+		top : 0;
+		left : -150px;
+		z-index: 0;
+		transition : all 0.35s;
+	}
+	#menuicon:checked + label + .sidebar {
+		left : 0;
+	}
+
+    /* 210322 추천제목 */
+    #recmd{
+        font-size:35px;
+        color:rgba(96,96,96,1);
+    }
+
+    /* 210320 출처표기 */
+footer{
+    position: fixed;
+    bottom: 10px;
+    left: 32px;
+    color:rgba(130,130,130,1); 
+    font-size: 20px;
+    font-family: 'NanumSquareRound',sans-serif;
+}
+footer a{
+    color:rgba(130,130,130,1);
+    font-family: 'NanumSquareRound',sans-serif;
+}
+footer #p_n{
+    display: inline;
+    position: fixed;
+    right:50px;
+    text-decoration: none;
+    color: red;
+    font-family: 'NanumSquareRound',sans-serif;
+}
